@@ -1,0 +1,75 @@
+
+import java.util.Scanner;
+
+//meu primeiro programa em java
+public class JavaApplication9 
+{
+// exercicio 3
+        public static void main(String[] args) {
+        Scanner input =  new Scanner( System.in ); 
+        
+        int num_conta;
+        int saldo_in;
+        int itens_cobrados;
+        int total_cred_aplicado;
+        int limite_credito;
+        int opcao;
+        int novo_saldo;
+        
+        do {
+            System.out.println("Informe o numero da conta: ");
+            num_conta = input.nextInt();
+            System.out.println("Informe saldo no inicio do mes: ");
+            saldo_in = input.nextInt();
+            System.out.println("Informe o total de itens cobrados: ");
+            itens_cobrados = input.nextInt();
+            System.out.println("Informe o total de creditos aplicados: ");
+            total_cred_aplicado = input.nextInt();
+            System.out.println("Informe o limite de credito autorizado: ");
+            limite_credito = input.nextInt();
+        novo_saldo = (saldo_in + itens_cobrados + total_cred_aplicado) - limite_credito;
+        if(novo_saldo > limite_credito) {
+            System.out.println("limite de credito excedido\n");
+        }
+        System.out.print("deseja continuar? (1) == sim | (0) == não: ");
+        opcao = input.nextInt();
+    }   
+           
+        
+        
+        
+        
+        
+        /*
+        int soma_km = 0;
+        int somaLitros = 0;
+        int km;
+        int litros;
+        int km_por_litro;
+        int opcao =1;
+        
+        while(opcao !=0){
+        
+        System.out.print( "Informe os kilometros rodados: ");
+        km = input.nextInt();
+        soma_km += km;
+        
+        System.out.print( "Informe o consumo do veiculo: "); //prompt
+        litros = input.nextInt(); //lê o segundo numero fornecido pelo usuario
+        somaLitros += litros;
+        km_por_litro = km / litros; // soma os numeros
+        
+        System.out.printf("A média de kilometros por litro do veiculo é %d\n", km_por_litro); //exibe a soma
+        System.out.print("deseja continuar? (1) == sim | (0) == não: ");
+        opcao = input.nextInt();
+      
+        }
+        System.out.printf("Os kilometros percorrido é %d  \n", soma_km);
+        System.out.printf("Quantidade de todos os litros gasto é %d\n", somaLitros);
+*/      
+        
+    
+
+        
+    
+
